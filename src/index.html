@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <div class="px-20">
+      <header class="flex py-4 px-20 sticky top-0 bg-white">
+        <div class="w-1/4">
+          <a href="#"
+            ><img
+              src="https://itcroctheme.com/wp/benqu-wp/newspaper/wp-content/uploads/sites/5/2022/09/logo-news.png"
+              alt="logo"
+          /></a>
+        </div>
+        <div class="w-2/4 place-content-center">
+          <ul class="flex font-bold gap-4 justify-center">
+            <li class="group">
+              <a href="#">Home </a>
+              <i
+                class="fa-solid fa-angle-right group-hover:rotate-90 px-1 transition-all duration-500"
+              ></i>
+              <ul
+                class="hidden group-hover:block absolute w-[250px] bg-white shadow-md rounded-md transition-all duration-1000"
+              >
+                <li class="px-5 py-3 flex items-center gap-1 group">
+                  <div
+                    class="w-3 h-1 bg-red-500 hidden group-hover:block transition-all duration-500"
+                  ></div>
+                  <a href="#">Home One</a>
+                </li>
+                <li class="group px-5 py-3 flex items-center gap-1">
+                  <div
+                    class="w-3 h-1 bg-red-500 hidden group-hover:block"
+                  ></div>
+                  <a href="#">Home Two</a>
+                </li>
+              </ul>
+            </li>
+            <li class="group">
+              <a href="#">Features </a>
+              <i
+                class="fa-solid fa-angle-right group-hover:rotate-90 px-1 transition-all duration-500"
+              ></i>
+              <ul
+                class="hidden group-hover:block absolute w-[250px] bg-white shadow-md rounded-md"
+              >
+                <li class="px-5 py-3 flex items-center gap-1 group">
+                  <div
+                    class="w-3 h-1 bg-red-500 hidden group-hover:block"
+                  ></div>
+                  <a href="#">Home One</a>
+                </li>
+                <li class="px-5 py-3 flex items-center gap-1 group">
+                  <div
+                    class="w-3 h-1 bg-red-500 hidden group-hover:block"
+                  ></div>
+                  <a href="#">Home Two</a>
+                </li>
+              </ul>
+            </li>
+            <li class="group">
+              <a href="#">Categories </a>
+              <i
+                class="fa-solid fa-angle-right group-hover:rotate-90 px-1 transition-all duration-500"
+              ></i>
+              <ul
+                class="hidden group-hover:block absolute w-[250px] bg-white shadow-md rounded-md"
+              >
+                <li class="px-5 py-3 flex items-center gap-1 group">
+                  <div
+                    class="w-3 h-1 bg-red-500 hidden group-hover:block"
+                  ></div>
+                  <a href="#">Home One</a>
+                </li>
+                <li class="px-5 py-3 flex items-center gap-1 group">
+                  <div
+                    class="w-3 h-1 bg-red-500 hidden group-hover:block"
+                  ></div>
+                  <a href="#">Home Two</a>
+                </li>
+              </ul>
+            </li>
+            <li class="group">
+              <a href="#">Tags </a>
+              <i
+                class="fa-solid fa-angle-right group-hover:rotate-90 px-1 transition-all duration-500"
+              ></i>
+              <ul
+                class="hidden group-hover:block absolute w-[250px] bg-white shadow-md rounded-md"
+              >
+                <li class="px-5 py-3 flex items-center gap-1 group">
+                  <div
+                    class="w-3 h-1 bg-red-500 hidden group-hover:block"
+                  ></div>
+                  <a href="#">Home One</a>
+                </li>
+                <li class="px-5 py-3 flex items-center gap-1 group">
+                  <div
+                    class="w-3 h-1 bg-red-500 hidden group-hover:block"
+                  ></div>
+                  <a href="#">Home Two</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="w-1/4 flex justify-end items-center gap-3 text-gray-700">
+          <div class="search-button">
+            <input type="text" id="search-box" name="search-box" class="hidden peer-focus:size-10 peer-focus:border-black peer-focus:block peer-focus:bg-black"/>
+            <label for="search-box" class="size-2 border-black peer"></label>
+            <i class="fa-solid fa-magnifying-glass search-icon peer-focus:hidden"></i>
+            <i class="fa-solid fa-xmark close-icon text-lg hidden peer-focus:block"></i>
+          </div>
+          <div class="dark-mode">
+            <input
+              type="checkbox"
+              id="dark-mode"
+              name="dark-mode"
+              class="hidden"
+            />
+            <label for="dark-mode">
+              <i class="fa-solid fa-moon"></i>
+              <i class="fa-solid fa-sun hidden"></i>
+            </label>
+          </div>
+          <div class="hidden">
+            <input type="checkbox" id="respon-menu" name="respon-menu" />
+            <label for="respon-menu">
+              <i class="fa-solid fa-bars"></i>
+              <i class="fa-solid fa-x"></i>
+            </label>
+            <div class="side-menu">
+              <ul>
+                <li class="side">
+                  <a href="#">HOME </a>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <hr />
+                  <ul>
+                    <li><a href="#">Home One</a></li>
+                    <li><a href="#">Home Two</a></li>
+                  </ul>
+                </li>
+                <li class="side">
+                  <a href="#">FEARTURES </a>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <hr />
+                  <ul>
+                    <li><a href="#">Home One</a></li>
+                    <li><a href="#">Home Two</a></li>
+                  </ul>
+                </li>
+                <li class="side">
+                  <a href="#">CATEGORIES </a>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <hr />
+                  <ul>
+                    <li><a href="#">Home One</a></li>
+                    <li><a href="#">Home Two</a></li>
+                  </ul>
+                </li>
+                <li class="side">
+                  <a href="#">TAGS </a>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <hr />
+                  <ul>
+                    <li><a href="#">Home One</a></li>
+                    <li><a href="#">Home Two</a></li>
+                  </ul>
+                </li>
+                <li class="side">
+                  <a href="#">CONTACT US </a>
+                  <i class="fa-solid fa-angle-right"></i>
+                  <hr />
+                  <ul>
+                    <li><a href="#">Home One</a></li>
+                    <li><a href="#">Home Two</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="w-full h-14 bg-gray-100 flex items-center px-4 gap-2">
+        <a href="#">Home</a>
+        <a href="#">Business</a>
+        <span>Detail</span>
+      </div>
+      <div class="flex py-5">
+        <div class="w-4/6 px-5 flex gap-5 flex-col">
+          <div class="flex gap-4 rounded-md border border-gray-300 border-solid w-full h-[330px]">
+            <div class="w-2/6 h-full flex justify-center">
+              <img src="https://demo-responsive.vercel.app/imgs/business.jpg" alt="blog-thumbnail" width="100%" class="object-cover" />
+            </div>
+            <div class="w-4/6 h-full flex flex-col justify-center gap-3 px-3">
+              <div class="w-28 h-8 bg-yellow-400 rounded-b-2xl rounded-r-2xl place-content-center items-center flex text-white font-medium">BUSINESS</div>
+              <h2 class="line-clamp-2 font-bold text-2xl">
+                <a href=""
+                  >Emirates Palace Spends that a Hefty Sum For Emirates Palace
+                  Spends that a Hefty Sum ForEmirates Palace Spends that a Hefty
+                  Sum ForEmirates Palace Spends that a Hefty Sum ForEmirates
+                  Palace Spends that a Hefty Sum For </a
+                >
+              </h2>
+              <p class="text-gray-400">
+                There are many variations of passages of Lorem Ipsum available
+                but the majority have suffered alteration in that
+              </p>
+              <div class="font-bold text-gray-600 flex gap-4 text-sm">
+                <span>BY JUSTIND</span>
+                <span>AUGUST 29,2024</span>
+                <span>11 COMMENTS</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-4 rounded-md border border-gray-300 border-solid w-full h-[330px]">
+            <div class="w-2/6 h-full flex justify-center">
+              <img src="https://demo-responsive.vercel.app/imgs/business.jpg" alt="blog-thumbnail" width="100%" class="object-cover" />
+            </div>
+            <div class="w-4/6 h-full flex flex-col justify-center gap-3 px-3">
+              <div class="w-28 h-8 bg-yellow-400 rounded-b-2xl rounded-r-2xl place-content-center items-center flex text-white font-medium">BUSINESS</div>
+              <h2 class="line-clamp-2 font-bold text-2xl">
+                <a href=""
+                  >Emirates Palace Spends that a Hefty Sum For Emirates Palace
+                  Spends that a Hefty Sum ForEmirates Palace Spends that a Hefty
+                  Sum ForEmirates Palace Spends that a Hefty Sum ForEmirates
+                  Palace Spends that a Hefty Sum For </a
+                >
+              </h2>
+              <p class="text-gray-400">
+                There are many variations of passages of Lorem Ipsum available
+                but the majority have suffered alteration in that
+              </p>
+              <div class="font-bold text-gray-600 flex gap-4 text-sm">
+                <span>BY JUSTIND</span>
+                <span>AUGUST 29,2024</span>
+                <span>11 COMMENTS</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-4 rounded-md border border-gray-300 border-solid w-full h-[330px]">
+            <div class="w-2/6 h-full flex justify-center">
+              <img src="https://demo-responsive.vercel.app/imgs/business.jpg" alt="blog-thumbnail" width="100%" class="object-cover" />
+            </div>
+            <div class="w-4/6 h-full flex flex-col justify-center gap-3 px-3">
+              <div class="w-28 h-8 bg-yellow-400 rounded-b-2xl rounded-r-2xl place-content-center items-center flex text-white font-medium">BUSINESS</div>
+              <h2 class="line-clamp-2 font-bold text-2xl">
+                <a href=""
+                  >Emirates Palace Spends that a Hefty Sum For Emirates Palace
+                  Spends that a Hefty Sum ForEmirates Palace Spends that a Hefty
+                  Sum ForEmirates Palace Spends that a Hefty Sum ForEmirates
+                  Palace Spends that a Hefty Sum For </a
+                >
+              </h2>
+              <p class="text-gray-400">
+                There are many variations of passages of Lorem Ipsum available
+                but the majority have suffered alteration in that
+              </p>
+              <div class="font-bold text-gray-600 flex gap-4 text-sm">
+                <span>BY JUSTIND</span>
+                <span>AUGUST 29,2024</span>
+                <span>11 COMMENTS</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-4 rounded-md border border-gray-300 border-solid w-full h-[330px]">
+            <div class="w-2/6 h-full flex justify-center">
+              <img src="https://demo-responsive.vercel.app/imgs/business.jpg" alt="blog-thumbnail" width="100%" class="object-cover" />
+            </div>
+            <div class="w-4/6 h-full flex flex-col justify-center gap-3 px-3">
+              <div class="w-28 h-8 bg-yellow-400 rounded-b-2xl rounded-r-2xl place-content-center items-center flex text-white font-medium">BUSINESS</div>
+              <h2 class="line-clamp-2 font-bold text-2xl">
+                <a href=""
+                  >Emirates Palace Spends that a Hefty Sum For Emirates Palace
+                  Spends that a Hefty Sum ForEmirates Palace Spends that a Hefty
+                  Sum ForEmirates Palace Spends that a Hefty Sum ForEmirates
+                  Palace Spends that a Hefty Sum For </a
+                >
+              </h2>
+              <p class="text-gray-400">
+                There are many variations of passages of Lorem Ipsum available
+                but the majority have suffered alteration in that
+              </p>
+              <div class="font-bold text-gray-600 flex gap-4 text-sm">
+                <span>BY JUSTIND</span>
+                <span>AUGUST 29,2024</span>
+                <span>11 COMMENTS</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-4 rounded-md border border-gray-300 border-solid w-full h-[330px]">
+            <div class="w-2/6 h-full flex justify-center">
+              <img src="https://demo-responsive.vercel.app/imgs/business.jpg" alt="blog-thumbnail" width="100%" class="object-cover" />
+            </div>
+            <div class="w-4/6 h-full flex flex-col justify-center gap-3 px-3">
+              <div class="w-28 h-8 bg-yellow-400 rounded-b-2xl rounded-r-2xl place-content-center items-center flex text-white font-medium">BUSINESS</div>
+              <h2 class="line-clamp-2 font-bold text-2xl">
+                <a href=""
+                  >Emirates Palace Spends that a Hefty Sum For Emirates Palace
+                  Spends that a Hefty Sum ForEmirates Palace Spends that a Hefty
+                  Sum ForEmirates Palace Spends that a Hefty Sum ForEmirates
+                  Palace Spends that a Hefty Sum For </a
+                >
+              </h2>
+              <p class="text-gray-400">
+                There are many variations of passages of Lorem Ipsum available
+                but the majority have suffered alteration in that
+              </p>
+              <div class="font-bold text-gray-600 flex gap-4 text-sm">
+                <span>BY JUSTIND</span>
+                <span>AUGUST 29,2024</span>
+                <span>11 COMMENTS</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-4 rounded-md border border-gray-300 border-solid w-full h-[330px]">
+            <div class="w-2/6 h-full flex justify-center">
+              <img src="https://demo-responsive.vercel.app/imgs/business.jpg" alt="blog-thumbnail" width="100%" class="object-cover" />
+            </div>
+            <div class="w-4/6 h-full flex flex-col justify-center gap-3 px-3">
+              <div class="w-28 h-8 bg-yellow-400 rounded-b-2xl rounded-r-2xl place-content-center items-center flex text-white font-medium">BUSINESS</div>
+              <h2 class="line-clamp-2 font-bold text-2xl">
+                <a href=""
+                  >Emirates Palace Spends that a Hefty Sum For Emirates Palace
+                  Spends that a Hefty Sum ForEmirates Palace Spends that a Hefty
+                  Sum ForEmirates Palace Spends that a Hefty Sum ForEmirates
+                  Palace Spends that a Hefty Sum For </a
+                >
+              </h2>
+              <p class="text-gray-400">
+                There are many variations of passages of Lorem Ipsum available
+                but the majority have suffered alteration in that
+              </p>
+              <div class="font-bold text-gray-600 flex gap-4 text-sm">
+                <span>BY JUSTIND</span>
+                <span>AUGUST 29,2024</span>
+                <span>11 COMMENTS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-2/6 pr-5">
+          <div class="categories">
+            <div class="cate-title">
+              <hr />
+              <h3>Categories</h3>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="size-full  p-5 bg-green-600 rounded-b-3xl rounded-r-3xl flex items-center justify-center text-white font-bold">
+                <span>BUSINESS (10)</span>
+                <div class="color c-1"></div>
+              </div>
+              <div class="size-full p-5 bg-green-600 rounded-b-3xl rounded-r-3xl flex items-center justify-center text-white font-bold">
+                <span>BUSINESS (10)</span>
+                <div class="color c-1"></div>
+              </div>
+              <div class="size-full p-5 bg-green-600 rounded-b-3xl rounded-r-3xl flex items-center justify-center text-white font-bold">
+                <span>BUSINESS (10)</span>
+                <div class="color c-1"></div>
+              </div>
+              <div class="size-full p-5 bg-green-600 rounded-b-3xl rounded-r-3xl flex items-center justify-center text-white font-bold">
+                <span>BUSINESS (10)</span>
+                <div class="color c-1"></div>
+              </div>
+              <div class="size-full p-5 bg-green-600 rounded-b-3xl rounded-r-3xl flex items-center justify-center text-white font-bold">
+                <span>BUSINESS (10)</span>
+                <div class="color c-1"></div>
+              </div>
+            </div>
+          </div>
+          <div class="blog-posts">
+            <hr />
+            <h3>Blog Posts</h3>
+            <div class="flex flex-col gap-4">
+              <div class="grid grid-cols-[1fr_2fr] gap-4">
+                <div class="rounded-2xl overflow-hidden">
+                  <img src="https://demo-responsive.vercel.app/imgs/business.jpg" alt="blog-thumbnail" width="100%" class="object-cover"/>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <div class="top-info t-1">
+                    <span>BUSINESS</span>
+                    <span
+                      ><i class="fa-regular fa-calendar"></i> AUGUST
+                      29,2024</span
+                    >
+                  </div>
+                  <h2 class="line-clamp-2">
+                    Emirates Palace Spends that a Hefty Sum For Emirates Palace
+                    Spends that a Hefty Sum ForEmirates Palace Spends that a
+                    Hefty Sum ForEmirates Palace Spends that a Hefty Sum
+                    ForEmirates Palace Spends that a Hefty Sum For
+                  </h2>
+                </div>
+              </div>
+              <div class="grid grid-cols-[1fr_2fr] gap-4">
+                <div class="rounded-2xl overflow-hidden">
+                  <img src="https://demo-responsive.vercel.app/imgs/business.jpg" alt="blog-thumbnail" width="100%" class="object-cover"/>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <div class="top-info t-1">
+                    <span>BUSINESS</span>
+                    <span
+                      ><i class="fa-regular fa-calendar"></i> AUGUST
+                      29,2024</span
+                    >
+                  </div>
+                  <h2 class="line-clamp-2">
+                    Emirates Palace Spends that a Hefty Sum For Emirates Palace
+                    Spends that a Hefty Sum ForEmirates Palace Spends that a
+                    Hefty Sum ForEmirates Palace Spends that a Hefty Sum
+                    ForEmirates Palace Spends that a Hefty Sum For
+                  </h2>
+                </div>
+              </div>
+              <div class="grid grid-cols-[1fr_2fr] gap-4">
+                <div class="rounded-2xl overflow-hidden">
+                  <img src="https://demo-responsive.vercel.app/imgs/business.jpg" alt="blog-thumbnail" width="100%" class="object-cover"/>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <div class="top-info t-1">
+                    <span>BUSINESS</span>
+                    <span
+                      ><i class="fa-regular fa-calendar"></i> AUGUST
+                      29,2024</span
+                    >
+                  </div>
+                  <h2 class="line-clamp-2">
+                    Emirates Palace Spends that a Hefty Sum For Emirates Palace
+                    Spends that a Hefty Sum ForEmirates Palace Spends that a
+                    Hefty Sum ForEmirates Palace Spends that a Hefty Sum
+                    ForEmirates Palace Spends that a Hefty Sum For
+                  </h2>
+                </div>
+              </div>
+              <div class="grid grid-cols-[1fr_2fr] gap-4">
+                <div class="rounded-2xl overflow-hidden">
+                  <img src="https://demo-responsive.vercel.app/imgs/business.jpg" alt="blog-thumbnail" width="100%" class="object-cover"/>
+                </div>
+                <div class="flex flex-col gap-1">
+                  <div class="top-info t-1">
+                    <span>BUSINESS</span>
+                    <span
+                      ><i class="fa-regular fa-calendar"></i> AUGUST
+                      29,2024</span
+                    >
+                  </div>
+                  <h2 class="line-clamp-2">
+                    Emirates Palace Spends that a Hefty Sum For Emirates Palace
+                    Spends that a Hefty Sum ForEmirates Palace Spends that a
+                    Hefty Sum ForEmirates Palace Spends that a Hefty Sum
+                    ForEmirates Palace Spends that a Hefty Sum For
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popular-tag">
+            <hr />
+            <h3>Popular Tag</h3>
+            <div class="grid grid-cols-3 gap-2">
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Asia (12)</div>
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Asia (12)</div>
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Design (7)</div>
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Fashion (12)</div>
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Game (1)</div>
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Food (1)</div>
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Tech (1)</div>
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Apps (1)</div>
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Asia (1)</div>
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Design (1)</div>
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Fashion (1)</div>
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Game (1)</div>
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Food (1)</div>
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Apps (1)</div>
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Tech (1)</div>
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Apps (1)</div>
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Asia (1)</div>
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Design (1)</div>
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Fashion (1)</div>
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Game (1)</div>
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Foods (1)</div>
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Tech (1)</div>
+              <div class="w-max h-max p-2 border border-solid border-black rounded-xl">World (1)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="flex gap-4 pb-3">
+        <div class="w-1/6 flex flex-col gap-2">
+          <a href="#"
+            ><img
+              src="https://itcroctheme.com/wp/benqu-wp/newspaper/wp-content/uploads/sites/5/2022/09/logo-news.png"
+              alt="footer-logo"
+          /></a>
+          <p>
+            There are many variations of the majority alteration in that some
+            slightly believable.
+          </p>
+          <span
+            ><i class="fa-solid fa-location-dot"></i> 15 Cliff St, New York
+            10038, USA
+          </span>
+          <span><i class="fa-solid fa-phone"></i> +1819-602-9641</span>
+          <span><i class="fa-solid fa-envelope"></i> info@example.com</span>
+        </div>
+        <div class="w-1/6">
+          <h4>Useful Links</h4>
+          <ul>
+            <li>
+              <a href="#">Blog Index </a>
+            </li>
+            <li>
+              <a href="#">Company About </a>
+            </li>
+            <li>
+              <a href="#">Contact With Us </a>
+            </li>
+            <li>
+              <a href="#">Health Tips </a>
+            </li>
+            <li>
+              <a href="#">Business & Talkshow </a>
+            </li>
+            <li>
+              <a href="#">Top Interview </a>
+            </li>
+            <li>
+              <a href="#">Education & Tech </a>
+            </li>
+          </ul>
+        </div>
+        <div class="w-2/6">
+          <h4>Popular Posts</h4>
+          <div class="flex flex-col gap-4">
+            <div class="grid grid-cols-[1fr_2fr] gap-4">
+              <div class="rounded-2xl overflow-hidden">
+                <img src="https://demo-responsive.vercel.app/imgs/business.jpg" alt="blog-thumbnail" width="100%" class="object-cover"/>
+              </div>
+              <div class="flex flex-col gap-1">
+                <div class="top-info t-1">
+                  <span>BUSINESS</span>
+                  <span
+                    ><i class="fa-regular fa-calendar"></i> AUGUST
+                    29,2024</span
+                  >
+                </div>
+                <h2 class="line-clamp-2">
+                  Emirates Palace Spends that a Hefty Sum For Emirates Palace
+                  Spends that a Hefty Sum ForEmirates Palace Spends that a
+                  Hefty Sum ForEmirates Palace Spends that a Hefty Sum
+                  ForEmirates Palace Spends that a Hefty Sum For
+                </h2>
+              </div>
+            </div>
+            <div class="grid grid-cols-[1fr_2fr] gap-4">
+              <div class="rounded-2xl overflow-hidden">
+                <img src="https://demo-responsive.vercel.app/imgs/business.jpg" alt="blog-thumbnail" width="100%" class="object-cover"/>
+              </div>
+              <div class="flex flex-col gap-1">
+                <div class="top-info t-1">
+                  <span>BUSINESS</span>
+                  <span
+                    ><i class="fa-regular fa-calendar"></i> AUGUST
+                    29,2024</span
+                  >
+                </div>
+                <h2 class="line-clamp-2">
+                  Emirates Palace Spends that a Hefty Sum For Emirates Palace
+                  Spends that a Hefty Sum ForEmirates Palace Spends that a
+                  Hefty Sum ForEmirates Palace Spends that a Hefty Sum
+                  ForEmirates Palace Spends that a Hefty Sum For
+                </h2>
+              </div>
+            </div>
+            <div class="grid grid-cols-[1fr_2fr] gap-4">
+              <div class="rounded-2xl overflow-hidden">
+                <img src="https://demo-responsive.vercel.app/imgs/business.jpg" alt="blog-thumbnail" width="100%" class="object-cover"/>
+              </div>
+              <div class="flex flex-col gap-1">
+                <div class="top-info t-1">
+                  <span>BUSINESS</span>
+                  <span
+                    ><i class="fa-regular fa-calendar"></i> AUGUST
+                    29,2024</span
+                  >
+                </div>
+                <h2 class="line-clamp-2">
+                  Emirates Palace Spends that a Hefty Sum For Emirates Palace
+                  Spends that a Hefty Sum ForEmirates Palace Spends that a
+                  Hefty Sum ForEmirates Palace Spends that a Hefty Sum
+                  ForEmirates Palace Spends that a Hefty Sum For
+                </h2>
+              </div>
+            </div>
+            <div class="grid grid-cols-[1fr_2fr] gap-4">
+              <div class="rounded-2xl overflow-hidden">
+                <img src="https://demo-responsive.vercel.app/imgs/business.jpg" alt="blog-thumbnail" width="100%" class="object-cover"/>
+              </div>
+              <div class="flex flex-col gap-1">
+                <div class="top-info t-1">
+                  <span>BUSINESS</span>
+                  <span
+                    ><i class="fa-regular fa-calendar"></i> AUGUST
+                    29,2024</span
+                  >
+                </div>
+                <h2 class="line-clamp-2">
+                  Emirates Palace Spends that a Hefty Sum For Emirates Palace
+                  Spends that a Hefty Sum ForEmirates Palace Spends that a
+                  Hefty Sum ForEmirates Palace Spends that a Hefty Sum
+                  ForEmirates Palace Spends that a Hefty Sum For
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-2/6">
+          <h4>Browser Tags</h4>
+          <div class="flex flex-wrap gap-2">
+            <div class="w-max h-max p-2 border border-solid border-gray-500 rounded-b-3xl rounded-r-3xl">Apps (1)</div>
+            <div class="w-max h-max p-2 border border-solid border-gray-500 rounded-b-3xl rounded-r-3xl">Asia (12)</div>
+            <div class="w-max h-max p-2 border border-solid border-gray-500 rounded-b-3xl rounded-r-3xl">Design (7)</div>
+            <div class="w-max h-max p-2 border border-solid border-gray-500 rounded-b-3xl rounded-r-3xl">Fashion (12)</div>
+            <div class="w-max h-max p-2 border border-solid border-gray-500 rounded-b-3xl rounded-r-3xl">Game (1)</div>
+            <div class="w-max h-max p-2 border border-solid border-gray-500 rounded-b-3xl rounded-r-3xl">Food (1)</div>
+            <div class="w-max h-max p-2 border border-solid border-gray-500 rounded-b-3xl rounded-r-3xl">Tech (1)</div>
+            <div class="w-max h-max p-2 border border-solid border-gray-500 rounded-b-3xl rounded-r-3xl">Apps (1)</div>
+            <div class="w-max h-max p-2 border border-solid border-gray-500 rounded-b-3xl rounded-r-3xl">Asia (1)</div>
+            <div class="w-max h-max p-2 border border-solid border-gray-500 rounded-b-3xl rounded-r-3xl">Design (1)</div>
+            <div class="w-max h-max p-2 border border-solid border-gray-500 rounded-b-3xl rounded-r-3xl">Fashion (1)</div>
+            <div class="w-max h-max p-2 border border-solid border-gray-500 rounded-b-3xl rounded-r-3xl">Game (1)</div>
+            <div class="w-max h-max p-2 border border-solid border-gray-500 rounded-b-3xl rounded-r-3xl">Food (1)</div>
+            <div class="w-max h-max p-2 border border-solid border-gray-500 rounded-b-3xl rounded-r-3xl">Tech (1)</div>
+            <div class="w-max h-max p-2 border border-solid border-gray-500 rounded-b-3xl rounded-r-3xl">Apps (1)</div>
+            <div class="w-max h-max p-2 border border-solid border-gray-500 rounded-b-3xl rounded-r-3xl">Asia (1)</div>
+            <div class="w-max h-max p-2 border border-solid border-gray-500 rounded-b-3xl rounded-r-3xl">Design (1)</div>
+            <div class="w-max h-max p-2 border border-solid border-gray-500 rounded-b-3xl rounded-r-3xl">Fashion (1)</div>
+            <div class="w-max h-max p-2 border border-solid border-gray-500 rounded-b-3xl rounded-r-3xl">Game (1)</div>
+            <div class="w-max h-max p-2 border border-solid border-gray-500 rounded-b-3xl rounded-r-3xl">Foods (1)</div>
+            <div class="w-max h-max p-2 border border-solid border-gray-500 rounded-b-3xl rounded-r-3xl">Tech (1)</div>
+            <div class="w-max h-max p-2 border border-solid border-gray-500 rounded-b-3xl rounded-r-3xl">World (1)</div>
+          </div>
+        </div>
+      </footer>
+      <hr>
+      <div class="flex justify-between items-center pt-3">
+        <div class="flex gap-4">
+          <span>Business </span>
+          <span>Education </span>
+          <span>Fashion </span>
+          <span>Health </span>
+          <span>Interview</span>
+        </div>
+        <div>© 2024, benqu All Rights Reserved</div>
+      </div>
+    </div>
+  </body>
+</html>
