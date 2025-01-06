@@ -114,11 +114,12 @@
           </ul>
         </div>
         <div class="w-1/4 flex justify-end items-center gap-3 text-gray-700">
-          <div class="search-button">
-            <input type="text" id="search-box" name="search-box" class="hidden peer-focus:size-10 peer-focus:border-black peer-focus:block peer-focus:bg-black"/>
-            <label for="search-box" class="size-2 border-black peer"></label>
-            <i class="fa-solid fa-magnifying-glass search-icon peer-focus:hidden"></i>
-            <i class="fa-solid fa-xmark close-icon text-lg hidden peer-focus:block"></i>
+          <div class="flex ">
+            <input type="text" id="search-box" name="search-box" class="size-0 peer/input focus:size-4"/>
+            <label for="search-box" class=" border-black size-10 border rounded-full flex justify-center items-center cursor-pointer peer-focus/input:size-4">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <i class="fa-solid fa-xmark close-icon text-lg hidden"></i>
+            </label>
           </div>
           <div class="dark-mode">
             <input
@@ -196,13 +197,13 @@
         <span>Detail</span>
       </div>
       <div class="flex py-5">
-        <div class="w-4/6 px-5 flex gap-5 flex-col">
-          <div class="flex gap-4 rounded-md border border-gray-300 border-solid w-full h-[330px]">
-            <div class="w-2/6 h-full flex justify-center">
-              <img src="https://demo-responsive.vercel.app/imgs/business.jpg" alt="blog-thumbnail" width="100%" class="object-cover" />
+        <div class="w-[70%] px-5 flex gap-5 flex-col">
+          <div class="flex gap-4 rounded-md border border-gray-300 border-solid w-full h-[330px] group overflow-hidden">
+            <div class="w-2/6 h-full flex justify-center overflow-hidden ">
+              <img src="https://demo-responsive.vercel.app/imgs/business.jpg" alt="blog-thumbnail" class=" w-full object-cover group-hover:scale-125 transition-all duration-700" />
             </div>
             <div class="w-4/6 h-full flex flex-col justify-center gap-3 px-3">
-              <div class="w-28 h-8 bg-yellow-400 rounded-b-2xl rounded-r-2xl place-content-center items-center flex text-white font-medium">BUSINESS</div>
+              <div class="w-max py-2 px-4 bg-[#D6A411] rounded-b-full rounded-tr-full place-content-center items-center text-xs flex text-white font-bold hover:rounded-tr-none hover:rounded-tl-full transition-all duration-700">BUSINESS</div>
               <h2 class="line-clamp-2 font-bold text-2xl">
                 <a href=""
                   >Emirates Palace Spends that a Hefty Sum For Emirates Palace
@@ -222,8 +223,8 @@
               </div>
             </div>
           </div>
-          <div class="flex gap-4 rounded-md border border-gray-300 border-solid w-full h-[330px]">
-            <div class="w-2/6 h-full flex justify-center">
+          <div class="flex gap-4 rounded-md border border-gray-300 border-solid w-full h-[330px] ">
+            <div class="w-2/6 h-full flex justify-center overflow-hidden">
               <img src="https://demo-responsive.vercel.app/imgs/business.jpg" alt="blog-thumbnail" width="100%" class="object-cover" />
             </div>
             <div class="w-4/6 h-full flex flex-col justify-center gap-3 px-3">
@@ -348,7 +349,7 @@
             </div>
           </div>
         </div>
-        <div class="w-2/6 pr-5">
+        <div class="w-[30%] pr-5">
           <div class="categories">
             <div class="cate-title">
               <hr />
@@ -466,7 +467,7 @@
           <div class="popular-tag">
             <hr />
             <h3>Popular Tag</h3>
-            <div class="grid grid-cols-3 gap-2">
+            <div class="flex flex-wrap gap-2">
               <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Asia (12)</div>
               <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Asia (12)</div>
               <div class="w-max h-max p-2 border border-solid border-black rounded-xl">Design (7)</div>
