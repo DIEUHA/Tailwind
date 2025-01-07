@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .maintag {
+        @apply w-max py-2 px-4 rounded-b-full rounded-tr-full place-content-center items-center text-xs flex text-white font-bold hover:rounded-tr-none hover:rounded-tl-full transition-all duration-700 font-sans tracking-widest
+    }
+}
