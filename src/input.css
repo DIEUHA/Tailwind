@@ -5,4 +5,7 @@
     .maintag {
         @apply w-max py-2 px-4 rounded-b-full rounded-tr-full place-content-center items-center text-xs flex text-white font-bold hover:rounded-tr-none hover:rounded-tl-full transition-all duration-700 font-sans tracking-widest
     }
+    .footertag {
+       @apply w-max h-max px-4 py-2 border border-solid border-gray-500 text-gray-500 uppercase font-semibold rounded-b-full rounded-r-full hover:rounded-tr-none hover:rounded-tl-full hover:bg-red-600 hover:text-white hover:border-none transition-all duration-700
+    }
 }
