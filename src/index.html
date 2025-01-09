@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="output.css" />
   </head>
   <body>
-    <header class="flex py-4 sticky top-0 bg-white  justify-center mx-auto z-40">
+    <header class="flex py-4 sticky top-0 bg-white lg:justify-center mx-auto z-40 justify-between">
       <div class="w-1/4 flex justify-end">
         <a href="#"
           ><img
@@ -19,7 +19,7 @@
             alt="logo"
         /></a>
       </div>
-      <div class="w-2/4 place-content-center">
+      <div class="w-2/4 lg:flex lg:justify-center lg:items-center hidden">
         <ul class="flex font-bold gap-4 justify-center ">
           <li class="group">
             <a href="#">Home </a>
@@ -90,70 +90,105 @@
       </div>
       <div class="w-1/4 flex justify-center items-center gap-3 text-gray-700">
         <div class="flex relative">
-          <input type="text" id="search-box" name="search-box" class="p-3 absolute group/focus -top-5 -right-[1px] rounded-full w-10 h-10 opacity-0 focus:opacity-100 peer transition-all ease-in duration-500 focus:w-40 focus:border-[0.5px] focus:border-borderColor outline-none"/>
-          <label for="search-box" class="absolute -top-4 -left-10 z-30 border-borderColor size-0 p-5 border rounded-full flex justify-center transition-all duration-500 ease-in items-center cursor-pointer peer-focus:p-[15px]">
+          <input type="text" id="search-box" name="search-box" class= " p-3 absolute group/focus -top-5 -right-[1px] rounded-full w-10 h-10 opacity-0 focus:opacity-100 peer transition-all ease-in duration-500 focus:w-40 focus:border-[0.5px] focus:border-borderColor outline-none"/>
+          <label for="search-box" class="absolute -top-4 -left-10 border-borderColor size-0 p-5 border rounded-full flex justify-center transition-all duration-500 ease-in items-center cursor-pointer peer-focus:p-[15px]">
             <i class="fa-solid fa-magnifying-glass search-icon group-focus/focus:hidden"></i>
             <i class="fa-solid fa-xmark close-icon text-lg hidden group-focus/focus:block"></i>
           </label>
         </div>
         <div class="dark-mode">
           <input type="checkbox" id="dark-mode"name="dark-mode" class="hidden"/>
-          <label for="dark-mode group">
-            <i class="fa-solid fa-moon group-checked:hidden"></i>
-            <i class="fa-solid fa-sun hidden group-checked:block"></i>
+          <label for="dark-mode group text-lg ">
+            <i class="fa-solid fa-moon "></i>
+            <i class="fa-solid fa-sun hidden"></i>
           </label>
         </div>
-        <div class="hidden">
-          <input type="checkbox" id="respon-menu" name="respon-menu" />
+        <div class="sub-menu relative lg:hidden ">
+          <input type="checkbox" id="respon-menu" name="respon-menu" class="hidden peer " />
           <label for="respon-menu">
-            <i class="fa-solid fa-bars"></i>
-            <i class="fa-solid fa-x"></i>
+            <i class="fa-solid fa-bars "></i>
+            <i class="fa-solid fa-x hidden"></i>
           </label>
-          <div class="side-menu">
-            <ul>
-              <li class="side">
-                <a href="#">HOME </a>
+          <div class="side-menu py-20 px-6 fixed -right-[500px] w-[300px] h-[100vh] bg-white shadow-lg peer-checked:block peer-checked:right-0 peer-checked:top-0 hidden">
+            <ul class="">
+              <li class="side group">
+                <a href="#" class="group-hover:text-blue-600">HOME </a>
                 <i class="fa-solid fa-angle-right"></i>
                 <hr />
-                <ul>
-                  <li><a href="#">Home One</a></li>
-                  <li><a href="#">Home Two</a></li>
+                <ul class="group-hover:block hidden px-4">
+                  <li class="group/li flex items-center">
+                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mr-1"></div>
+                    <a href="#" class="group-hover:">Home One</a>
+                  </li>
+                  <hr>
+                  <li class="group/li flex items-center">
+                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mr-1"></div>
+                    <a href="#">Home Two</a></li>
+                  <hr>
                 </ul>
               </li>
-              <li class="side">
-                <a href="#">FEARTURES </a>
+              <li class="side group">
+                <a href="#" class="group-hover:text-blue-600">FEARTURES </a>
                 <i class="fa-solid fa-angle-right"></i>
                 <hr />
-                <ul>
-                  <li><a href="#">Home One</a></li>
-                  <li><a href="#">Home Two</a></li>
+                <ul class="group-hover:block hidden px-4">
+                  <li class="group/li flex items-center">
+                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mr-1"></div>
+                    <a href="#" class="group-hover:">Home One</a>
+                  </li>
+                  <hr>
+                  <li class="group/li flex items-center">
+                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mr-1"></div>
+                    <a href="#">Home Two</a></li>
+                  <hr>
                 </ul>
               </li>
-              <li class="side">
-                <a href="#">CATEGORIES </a>
+              <li class="side group">
+                <a href="#" class="group-hover:text-blue-600">CATEGORIES </a>
                 <i class="fa-solid fa-angle-right"></i>
                 <hr />
-                <ul>
-                  <li><a href="#">Home One</a></li>
-                  <li><a href="#">Home Two</a></li>
+                <ul class="group-hover:block hidden px-4">
+                  <li class="group/li flex items-center">
+                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mr-1"></div>
+                    <a href="#" class="group-hover:">Home One</a>
+                  </li>
+                  <hr>
+                  <li class="group/li flex items-center">
+                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mr-1"></div>
+                    <a href="#">Home Two</a></li>
+                  <hr>
                 </ul>
               </li>
-              <li class="side">
-                <a href="#">TAGS </a>
+              <li class="side group">
+                <a href="#" class="group-hover:text-blue-600">TAGS </a>
                 <i class="fa-solid fa-angle-right"></i>
                 <hr />
-                <ul>
-                  <li><a href="#">Home One</a></li>
-                  <li><a href="#">Home Two</a></li>
+                <ul class="group-hover:block hidden px-4">
+                  <li class="group/li flex items-center">
+                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mr-1"></div>
+                    <a href="#" class="group-hover:">Home One</a>
+                  </li>
+                  <hr>
+                  <li class="group/li flex items-center">
+                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mr-1"></div>
+                    <a href="#">Home Two</a></li>
+                  <hr>
                 </ul>
               </li>
-              <li class="side">
-                <a href="#">CONTACT US </a>
+              <li class="side group">
+                <a href="#" class="group-hover:text-blue-600">CONTACT US </a>
                 <i class="fa-solid fa-angle-right"></i>
                 <hr />
-                <ul>
-                  <li><a href="#">Home One</a></li>
-                  <li><a href="#">Home Two</a></li>
+                <ul class="group-hover:block hidden px-4">
+                  <li class="group/li flex items-center">
+                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mr-1"></div>
+                    <a href="#" class="group-hover:">Home One</a>
+                  </li>
+                  <hr>
+                  <li class="group/li flex items-center">
+                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mr-1"></div>
+                    <a href="#">Home Two</a></li>
+                  <hr>
                 </ul>
               </li>
             </ul>
@@ -170,14 +205,9 @@
             <span>Detail</span>
           </div>
         </section>
-        
-        <div
-          class="flex px-4 py-16 gap-6 max-w-[1320px] justify-center mx-auto"
-        >
-          <div class="w-[70%] flex gap-8 flex-col">
-            <div
-              class="flex gap-4 rounded-md border border-gray-300 border-solid w-full h-[330px] group overflow-hidden"
-            >
+        <div class="lg:flex px-4 py-16 gap-6 lg:max-w-[1320px] lg:justify-center lg:mx-auto w-full">
+          <div class="lg:w-[70%] flex gap-8 flex-col mb-8">
+            <div class="flex gap-4 rounded-md border border-gray-300 border-solid w-full h-[330px] group overflow-hidden">
               <div class="w-[40%] h-full flex justify-center overflow-hidden">
                 <img
                   src="https://demo-responsive.vercel.app/imgs/business.jpg"
@@ -208,8 +238,7 @@
                 </div>
               </div>
             </div>
-            <div
-              class="flex gap-4 rounded-md border border-gray-300 border-solid w-full h-[330px] group overflow-hidden"
+            <div class="flex gap-4 rounded-md border border-gray-300 border-solid w-full h-[330px] group overflow-hidden"
             >
               <div class="w-[40%] h-full flex justify-center overflow-hidden">
                 <img
@@ -242,8 +271,7 @@
                 </div>
               </div>
             </div>
-            <div
-              class="flex gap-4 rounded-md border border-gray-300 border-solid w-full h-[330px] group overflow-hidden"
+            <div class="flex gap-4 rounded-md border border-gray-300 border-solid w-full h-[330px] group overflow-hidden"
             >
               <div class="w-[40%] h-full flex justify-center overflow-hidden">
                 <img
@@ -379,7 +407,7 @@
               </div>
             </div>
           </div>
-          <div class="w-[30%] flex flex-col gap-8">
+          <div class="lg:w-[30%] flex flex-col gap-8 ">
             <div class="categories">
               <div class="cate-title font-bold text-[22px] font-serif flex items-center mb-8">
                 <div class="w-[30px] h-[2px] bg-gray-400"></div>
@@ -398,33 +426,33 @@
                 <div
                   class="group z-10 relative h-[68px] w-[45%] p-5 bg-[url('https://demo-responsive.vercel.app/imgs/business.jpg')] bg-cover bg-center rounded-b-full rounded-tr-full flex items-center justify-center text-white font-bold overflow-hidden"
                 >
-                  <span class="z-50">BUSINESS (10)</span>
+                  <span class="z-50">EDUCATION (6)</span>
                   <div
-                    class="size-full absolute bg-[#D6A411] opacity-50 z-20 group-hover:opacity-100 transition duration-500 ease-in"
+                    class="size-full absolute bg-[#02585E] opacity-50 z-20 group-hover:opacity-100 transition duration-500 ease-in"
                   ></div>
                 </div>
                 <div
                   class="group z-10 relative h-[68px] w-[45%] p-5 bg-[url('https://demo-responsive.vercel.app/imgs/business.jpg')] bg-cover bg-center rounded-b-full rounded-tr-full flex items-center justify-center text-white font-bold overflow-hidden"
                 >
-                  <span class="z-50">BUSINESS (10)</span>
+                  <span class="z-50">FASHION (22)</span>
                   <div
-                    class="size-full absolute bg-[#D6A411] opacity-50 z-20 group-hover:opacity-100 transition duration-500 ease-in"
+                    class="size-full absolute bg-[#AD0C5C] opacity-50 z-20 group-hover:opacity-100 transition duration-500 ease-in"
                   ></div>
                 </div>
                 <div
                   class="group z-10 relative h-[68px] w-[45%] p-5 bg-[url('https://demo-responsive.vercel.app/imgs/business.jpg')] bg-cover bg-center rounded-b-full rounded-tr-full flex items-center justify-center text-white font-bold overflow-hidden"
                 >
-                  <span class="z-50">BUSINESS (10)</span>
+                  <span class="z-50">HEALTH (11)</span>
                   <div
-                    class="size-full absolute bg-[#D6A411] opacity-50 z-20 group-hover:opacity-100 transition duration-500 ease-in"
+                    class="size-full absolute bg-[#0E7C08] opacity-50 z-20 group-hover:opacity-100 transition duration-500 ease-in"
                   ></div>
                 </div>
                 <div
                   class="group z-10 relative h-[68px] w-[45%] p-5 bg-[url('https://demo-responsive.vercel.app/imgs/business.jpg')] bg-cover bg-center rounded-b-full rounded-tr-full flex items-center justify-center text-white font-bold overflow-hidden"
                 >
-                  <span class="z-50">BUSINESS (10)</span>
+                  <span class="z-50">INTERVIEW (7)</span>
                   <div
-                    class="size-full absolute bg-[#D6A411] opacity-50 z-20 group-hover:opacity-100 transition duration-500 ease-in"
+                    class="size-full absolute bg-[#0DBC99] opacity-50 z-20 group-hover:opacity-100 transition duration-500 ease-in"
                   ></div>
                 </div>
               </div>
@@ -436,7 +464,7 @@
                 <div class="w-[50%] h-[2px] bg-gray-400"></div>
               </div>
               <div class="flex flex-col gap-4">
-                <div class="grid grid-cols-[1fr_2fr] gap-4 group">
+                <div class="grid lg:grid-cols-[1fr_2fr] gap-4 group grid-cols-[1fr_5fr] ">
                   <div class="rounded-2xl overflow-hidden">
                     <img
                       src="https://demo-responsive.vercel.app/imgs/business.jpg"
@@ -460,7 +488,7 @@
                     </h2>
                   </div>
                 </div>
-                <div class="grid grid-cols-[1fr_2fr] gap-4 group">
+                <div class="grid lg:grid-cols-[1fr_2fr] gap-4 group grid-cols-[1fr_5fr]">
                   <div class="rounded-2xl overflow-hidden">
                     <img
                       src="https://demo-responsive.vercel.app/imgs/business.jpg"
@@ -484,7 +512,7 @@
                     </h2>
                   </div>
                 </div>
-                <div class="grid grid-cols-[1fr_2fr] gap-4 group">
+                <div class="grid lg:grid-cols-[1fr_2fr] gap-4 group grid-cols-[1fr_5fr]">
                   <div class="rounded-2xl overflow-hidden">
                     <img
                       src="https://demo-responsive.vercel.app/imgs/business.jpg"
@@ -508,7 +536,7 @@
                     </h2>
                   </div>
                 </div>
-                <div class="grid grid-cols-[1fr_2fr] gap-4 group">
+                <div class="grid lg:grid-cols-[1fr_2fr] gap-4 group grid-cols-[1fr_5fr]">
                   <div class="rounded-2xl overflow-hidden">
                     <img
                       src="https://demo-responsive.vercel.app/imgs/business.jpg"
@@ -662,8 +690,8 @@
         </div>
       </div>
     </main>
-    <footer class="flex gap-4 pb-3 mt-8 max-w-[1320px] justify-center mx-auto">
-      <div class="w-1/6 flex flex-col gap-6">
+    <footer class="flex lg:gap-4 gap-14 pb-3 mt-8 lg:max-w-[1320px] lg:justify-center lg:mx-auto w-full mx-6 lg:flex-row flex-col">
+      <div class="lg:w-1/6 flex flex-col gap-6">
         <a href="#"
           ><img
             src="https://itcroctheme.com/wp/benqu-wp/newspaper/wp-content/uploads/sites/5/2022/09/logo-news.png"
@@ -680,7 +708,7 @@
         </div>
         
       </div>
-      <div class="w-1/6 flex flex-col gap-4">
+      <div class="lg:w-1/6 flex flex-col gap-4">
         <h4 class="text-[24px] font-semibold">Useful Links</h4>
         <ul class="flex flex-col gap-4">
           <li>
@@ -706,10 +734,10 @@
           </li>
         </ul>
       </div>
-      <div class="w-2/6 flex flex-col gap-4">
+      <div class="lg:w-2/6 flex flex-col gap-4">
         <h4 class="text-[24px] font-semibold">Popular Posts</h4>
         <div class="flex flex-col gap-4">
-          <div class="grid grid-cols-[1fr_2fr] gap-4 group">
+          <div class="grid lg:grid-cols-[1fr_2fr] gap-4 group grid-cols-[1fr_5fr]">
             <div class="rounded-2xl overflow-hidden">
               <img
                 src="https://demo-responsive.vercel.app/imgs/business.jpg"
@@ -733,7 +761,7 @@
               </h2>
             </div>
           </div>
-          <div class="grid grid-cols-[1fr_2fr] gap-4 group">
+          <div class="grid lg:grid-cols-[1fr_2fr] gap-4 group grid-cols-[1fr_5fr]">
             <div class="rounded-2xl overflow-hidden">
               <img
                 src="https://demo-responsive.vercel.app/imgs/business.jpg"
@@ -757,7 +785,7 @@
               </h2>
             </div>
           </div>
-          <div class="grid grid-cols-[1fr_2fr] gap-4 group">
+          <div class="grid lg:grid-cols-[1fr_2fr] gap-4 group grid-cols-[1fr_5fr]">
             <div class="rounded-2xl overflow-hidden">
               <img
                 src="https://demo-responsive.vercel.app/imgs/business.jpg"
@@ -781,7 +809,7 @@
               </h2>
             </div>
           </div>
-          <div class="grid grid-cols-[1fr_2fr] gap-4 group">
+          <div class="grid lg:grid-cols-[1fr_2fr] gap-4 group grid-cols-[1fr_5fr]">
             <div class="rounded-2xl overflow-hidden">
               <img
                 src="https://demo-responsive.vercel.app/imgs/business.jpg"
@@ -807,7 +835,7 @@
           </div>
         </div>
       </div>
-      <div class="w-2/6">
+      <div class="lg:w-2/6">
         <h4 class="text-[24px] font-semibold mb-4">Browser Tags</h4>
         <div class="flex flex-wrap gap-2">
           <div class="footertag">
@@ -922,7 +950,7 @@
       </div>
     </footer>
     <hr />
-    <div class="flex justify-between items-center max-w-[1320px] mx-auto pt-3 my-3">
+    <div class="flex lg:justify-between items-center lg:max-w-[1320px] lg:mx-auto pt-3 my-3 justify-center flex-col lg:flex-row gap-3">
       <div class="flex gap-4">
         <span class="hover:text-red-500">Business </span>
         <span class="hover:text-red-500">Education </span>
