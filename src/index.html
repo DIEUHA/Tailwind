@@ -10,8 +10,8 @@
     />
     <link rel="stylesheet" href="output.css" />
   </head>
-  <body>
-    <header class="flex py-4 sticky top-0 bg-white lg:justify-center mx-auto z-40 justify-between">
+  <body class="dark:bg-black dark:text-white">
+    <header class="flex py-4 sticky top-0 bg-white lg:justify-center mx-auto z-30 justify-between dark:bg-black">
       <div class="w-1/4 flex justify-end">
         <a href="#"
           ><img
@@ -24,7 +24,7 @@
           <li class="group">
             <a href="#">Home </a>
             <i class="fa-solid fa-angle-right group-hover:rotate-90 px-1 transition-all duration-300 ease-in"></i>
-            <ul class="hidden group-hover:block absolute w-[250px] bg-white shadow-md rounded-md transition-all duration-1000 ease-in">
+            <ul class="hidden group-hover:block absolute w-[250px] bg-white shadow-md rounded-md transition-all duration-1000 ease-in dark:bg-black">
               <li class="px-5 py-3 flex items-center gap-1 group/test">
                 <div class="w-3 h-1 bg-red-500 hidden group-hover/test:block transition-all duration-500 ease-in"></div>
                 <a href="#">Home One</a>
@@ -38,7 +38,7 @@
           <li class="group">
             <a href="#">Features </a>
             <i class="fa-solid fa-angle-right group-hover:rotate-90 px-1 transition-all duration-500"></i>
-            <ul class="hidden group-hover:block absolute w-[250px] bg-white shadow-md rounded-md">
+            <ul class="hidden group-hover:block absolute w-[250px] bg-white shadow-md rounded-md transition-all duration-1000 ease-in dark:bg-black">
               <li class="px-5 py-3 flex items-center gap-1 group/test">
                 <div class="w-3 h-1 bg-red-500 hidden group-hover/test:block"></div>
                 <a href="#">Home One</a>
@@ -54,9 +54,7 @@
             <i
               class="fa-solid fa-angle-right group-hover:rotate-90 px-1 transition-all duration-500"
             ></i>
-            <ul
-              class="hidden group-hover:block absolute w-[250px] bg-white shadow-md rounded-md"
-            >
+            <ul class="hidden group-hover:block absolute w-[250px] bg-white shadow-md rounded-md transition-all duration-1000 ease-in dark:bg-black">
               <li class="px-5 py-3 flex items-center gap-1 group/test">
                 <div class="w-3 h-1 bg-red-500 hidden group-hover/test:block"></div>
                 <a href="#">Home One</a>
@@ -72,9 +70,7 @@
             <i
               class="fa-solid fa-angle-right group-hover:rotate-90 px-1 transition-all duration-500"
             ></i>
-            <ul
-              class="hidden group-hover:block absolute w-[250px] bg-white shadow-md rounded-md"
-            >
+            <ul class="hidden group-hover:block absolute w-[250px] bg-white shadow-md rounded-md transition-all duration-1000 ease-in dark:bg-black">
               <li class="px-5 py-3 flex items-center gap-1 group/test">
                 <div class="w-3 h-1 bg-red-500 hidden group-hover/test:block"></div>
                 <a href="#">Home One</a>
@@ -96,112 +92,105 @@
             <i class="fa-solid fa-xmark close-icon text-lg hidden group-focus/focus:block"></i>
           </label>
         </div>
-        <div class="dark-mode">
+        <div class="dark-mode relative top-1">
           <input type="checkbox" id="dark-mode"name="dark-mode" class="hidden"/>
-          <label for="dark-mode group text-lg ">
-            <i class="fa-solid fa-moon "></i>
-            <i class="fa-solid fa-sun hidden"></i>
+          <label for="dark-mode group">
+            <i class="fa-solid fa-moon text-2xl "></i>
+            <i class="fa-solid fa-sun text-2xl hidden"></i>
           </label>
         </div>
-        <div class="sub-menu relative lg:hidden ">
+        <div class="sub-menu relative lg:hidden top-1">
           <input type="checkbox" id="respon-menu" name="respon-menu" class="hidden peer " />
           <label for="respon-menu">
-            <i class="fa-solid fa-bars "></i>
-            <i class="fa-solid fa-x hidden"></i>
+            <i class="fa-solid fa-bars text-2xl "></i>
+            <i class="fa-solid fa-x hidden text-2xl"></i>
           </label>
-          <div class="side-menu py-20 px-6 fixed -right-[500px] w-[300px] h-[100vh] bg-white shadow-lg peer-checked:block peer-checked:right-0 peer-checked:top-0 hidden">
+          <div class="z-40 side-menu py-20 px-6 fixed -right-[500px] w-[300px] h-[100vh] bg-white shadow-lg peer-checked:block peer-checked:right-0 peer-checked:top-0 hidden">
             <ul class="">
               <li class="side group">
-                <a href="#" class="group-hover:text-blue-600">HOME </a>
+                <a href="#" class="group-hover:text-blue-600 transition-all ease-in">HOME </a>
                 <i class="fa-solid fa-angle-right"></i>
-                <hr />
-                <ul class="group-hover:block hidden px-4">
+                <hr class="my-3" />
+                <ul class="group-hover:block hidden transition-all ease-in">
                   <li class="group/li flex items-center">
-                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mr-1"></div>
-                    <a href="#" class="group-hover:">Home One</a>
+                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mx-2"></div>
+                    <a href="#" class="ml-3 group-hover/li:ml-0 ">Home One</a>
                   </li>
-                  <hr>
+                  <hr class="my-3">
                   <li class="group/li flex items-center">
-                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mr-1"></div>
-                    <a href="#">Home Two</a></li>
-                  <hr>
+                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mx-2"></div>
+                    <a href="#" class="ml-3 group-hover/li:ml-0 ">Home Two</a>
+                  </li>
+                  <hr class="my-3">
                 </ul>
               </li>
               <li class="side group">
-                <a href="#" class="group-hover:text-blue-600">FEARTURES </a>
+                <a href="#" class="group-hover:text-blue-600 transition-all ease-in">FEATURES </a>
                 <i class="fa-solid fa-angle-right"></i>
-                <hr />
-                <ul class="group-hover:block hidden px-4">
+                <hr class="my-3" />
+                <ul class="group-hover:block hidden transition-all ease-in">
                   <li class="group/li flex items-center">
-                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mr-1"></div>
-                    <a href="#" class="group-hover:">Home One</a>
+                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mx-2"></div>
+                    <a href="#" class="ml-3 group-hover/li:ml-0 ">Home One</a>
                   </li>
-                  <hr>
+                  <hr class="my-3">
                   <li class="group/li flex items-center">
-                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mr-1"></div>
-                    <a href="#">Home Two</a></li>
-                  <hr>
+                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mx-2"></div>
+                    <a href="#" class="ml-3 group-hover/li:ml-0 ">Home Two</a>
+                  </li>
+                  <hr class="my-3">
                 </ul>
               </li>
               <li class="side group">
-                <a href="#" class="group-hover:text-blue-600">CATEGORIES </a>
+                <a href="#" class="group-hover:text-blue-600 transition-all ease-in">CATEGORIES </a>
                 <i class="fa-solid fa-angle-right"></i>
-                <hr />
-                <ul class="group-hover:block hidden px-4">
+                <hr class="my-3" />
+                <ul class="group-hover:block hidden transition-all ease-in">
                   <li class="group/li flex items-center">
-                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mr-1"></div>
-                    <a href="#" class="group-hover:">Home One</a>
+                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mx-2"></div>
+                    <a href="#" class="ml-3 group-hover/li:ml-0 ">Home One</a>
                   </li>
-                  <hr>
+                  <hr class="my-3">
                   <li class="group/li flex items-center">
-                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mr-1"></div>
-                    <a href="#">Home Two</a></li>
-                  <hr>
+                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mx-2"></div>
+                    <a href="#" class="ml-3 group-hover/li:ml-0 ">Home Two</a>
+                  </li>
+                  <hr class="my-3">
                 </ul>
               </li>
               <li class="side group">
-                <a href="#" class="group-hover:text-blue-600">TAGS </a>
+                <a href="#" class="group-hover:text-blue-600 transition-all ease-in">TAGS </a>
                 <i class="fa-solid fa-angle-right"></i>
-                <hr />
-                <ul class="group-hover:block hidden px-4">
+                <hr class="my-3" />
+                <ul class="group-hover:block hidden transition-all ease-in">
                   <li class="group/li flex items-center">
-                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mr-1"></div>
-                    <a href="#" class="group-hover:">Home One</a>
+                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mx-2"></div>
+                    <a href="#" class="ml-3 group-hover/li:ml-0 ">Home One</a>
                   </li>
-                  <hr>
+                  <hr class="my-3">
                   <li class="group/li flex items-center">
-                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mr-1"></div>
-                    <a href="#">Home Two</a></li>
-                  <hr>
+                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mx-2"></div>
+                    <a href="#" class="ml-3 group-hover/li:ml-0 ">Home Two</a>
+                  </li>
+                  <hr class="my-3">
                 </ul>
               </li>
               <li class="side group">
-                <a href="#" class="group-hover:text-blue-600">CONTACT US </a>
-                <i class="fa-solid fa-angle-right"></i>
-                <hr />
-                <ul class="group-hover:block hidden px-4">
-                  <li class="group/li flex items-center">
-                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mr-1"></div>
-                    <a href="#" class="group-hover:">Home One</a>
-                  </li>
-                  <hr>
-                  <li class="group/li flex items-center">
-                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mr-1"></div>
-                    <a href="#">Home Two</a></li>
-                  <hr>
-                </ul>
+                <a href="#" class="group-hover:text-blue-600 transition-all ease-in">CONTACT US </a>
+                <hr class="my-3" />
               </li>
+             
             </ul>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <div class="bg-bgColor dark:bg-black">
-        <section class="w-full bg-breadcrumbColor">
-          <div class="max-w-[1320px] m-auto h-14 bg-gray-100 flex items-center px-4 gap-2 font-semibold">
-            <a href="#" class="hover:text-red-600 transition-all ease-in duration-500 after:content-['/'] after:text-black after:ml-2">Home</a>
-            <a href="#" class="hover:text-red-600 transition-all ease-in duration-500 after:content-['/'] after:text-black after:ml-2">Business</a>
+      <div class="bg-bgColor dark:bg-black dark:text-white">
+        <section class="w-full bg-breadcrumbColor dark:bg-black">
+          <div class="max-w-[1320px] m-auto h-14 bg-gray-100 flex items-center px-4 gap-2 font-semibold dark:bg-black">
+            <a href="#" class="hover:text-red-600 transition-all ease-in duration-500 after:content-['/'] after:text-black after:ml-2 dark:after:text-borderColor">Home</a>
+            <a href="#" class="hover:text-red-600 transition-all ease-in duration-500 after:content-['/'] after:text-black after:ml-2 dark:after:text-borderColor">Business</a>
             <span>Detail</span>
           </div>
         </section>
@@ -242,7 +231,7 @@
             >
               <div class="w-[40%] h-full flex justify-center overflow-hidden">
                 <img
-                  src="https://demo-responsive.vercel.app/imgs/business.jpg"
+                  src="https://demo-responsive.vercel.app/imgs/news-1.jpg"
                   alt="blog-thumbnail"
                   width="100%"
                   class="w-full object-cover group-hover:scale-125 transition-all duration-700 ease-in"
@@ -275,7 +264,7 @@
             >
               <div class="w-[40%] h-full flex justify-center overflow-hidden">
                 <img
-                  src="https://demo-responsive.vercel.app/imgs/business.jpg"
+                  src="https://demo-responsive.vercel.app/imgs/news-2.jpg"
                   alt="blog-thumbnail"
                   width="100%"
                   class="w-full object-cover group-hover:scale-125 transition-all duration-700 ease-in"
@@ -309,7 +298,7 @@
             >
               <div class="w-[40%] h-full flex justify-center overflow-hidden">
                 <img
-                  src="https://demo-responsive.vercel.app/imgs/business.jpg"
+                  src="https://demo-responsive.vercel.app/imgs/news-3.jpg"
                   alt="blog-thumbnail"
                   width="100%"
                   class="w-full object-cover group-hover:scale-125 transition-all duration-700 ease-in"
@@ -343,7 +332,7 @@
             >
               <div class="w-[40%] h-full flex justify-center overflow-hidden">
                 <img
-                  src="https://demo-responsive.vercel.app/imgs/business.jpg"
+                  src="https://demo-responsive.vercel.app/imgs/articles-3.jpg"
                   alt="blog-thumbnail"
                   width="100%"
                   class="w-full object-cover group-hover:scale-125 transition-all duration-700 ease-in"
@@ -480,18 +469,13 @@
                         29,2024</span
                       >
                     </div>
-                    <h2 class="line-clamp-2 text-[16px]">
-                      Emirates Palace Spends that a Hefty Sum For Emirates
-                      Palace Spends that a Hefty Sum ForEmirates Palace Spends
-                      that a Hefty Sum ForEmirates Palace Spends that a Hefty
-                      Sum ForEmirates Palace Spends that a Hefty Sum For
-                    </h2>
+                    <h2 class="line-clamp-2 text-[16px]">We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</h2>
                   </div>
                 </div>
                 <div class="grid lg:grid-cols-[1fr_2fr] gap-4 group grid-cols-[1fr_5fr]">
                   <div class="rounded-2xl overflow-hidden">
                     <img
-                      src="https://demo-responsive.vercel.app/imgs/business.jpg"
+                      src="https://demo-responsive.vercel.app/imgs/news-1.jpg"
                       alt="blog-thumbnail"
                       width="100%"
                       class="w-full object-cover group-hover:scale-125 transition-all duration-700 ease-in"
@@ -504,18 +488,13 @@
                         29,2024</span
                       >
                     </div>
-                    <h2 class="line-clamp-2 text-[16px]">
-                      Emirates Palace Spends that a Hefty Sum For Emirates
-                      Palace Spends that a Hefty Sum ForEmirates Palace Spends
-                      that a Hefty Sum ForEmirates Palace Spends that a Hefty
-                      Sum ForEmirates Palace Spends that a Hefty Sum For
-                    </h2>
+                    <h2 class="line-clamp-2 text-[16px]">We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</h2>
                   </div>
                 </div>
                 <div class="grid lg:grid-cols-[1fr_2fr] gap-4 group grid-cols-[1fr_5fr]">
                   <div class="rounded-2xl overflow-hidden">
                     <img
-                      src="https://demo-responsive.vercel.app/imgs/business.jpg"
+                      src="https://demo-responsive.vercel.app/imgs/news-3.jpg"
                       alt="blog-thumbnail"
                       width="100%"
                       class="w-full object-cover group-hover:scale-125 transition-all duration-700 ease-in"
@@ -528,18 +507,13 @@
                         29,2024</span
                       >
                     </div>
-                    <h2 class="line-clamp-2 text-[16px]">
-                      Emirates Palace Spends that a Hefty Sum For Emirates
-                      Palace Spends that a Hefty Sum ForEmirates Palace Spends
-                      that a Hefty Sum ForEmirates Palace Spends that a Hefty
-                      Sum ForEmirates Palace Spends that a Hefty Sum For
-                    </h2>
+                    <h2 class="line-clamp-2 text-[16px]">We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</h2>
                   </div>
                 </div>
                 <div class="grid lg:grid-cols-[1fr_2fr] gap-4 group grid-cols-[1fr_5fr]">
                   <div class="rounded-2xl overflow-hidden">
                     <img
-                      src="https://demo-responsive.vercel.app/imgs/business.jpg"
+                      src="https://demo-responsive.vercel.app/imgs/news-4.jpg"
                       alt="blog-thumbnail"
                       width="100%"
                       class="w-full object-cover group-hover:scale-125 transition-all duration-700 ease-in"
@@ -552,12 +526,7 @@
                         29,2024</span
                       >
                     </div>
-                    <h2 class="line-clamp-2 text-[16px]">
-                      Emirates Palace Spends that a Hefty Sum For Emirates
-                      Palace Spends that a Hefty Sum ForEmirates Palace Spends
-                      that a Hefty Sum ForEmirates Palace Spends that a Hefty
-                      Sum ForEmirates Palace Spends that a Hefty Sum For
-                    </h2>
+                    <h2 class="line-clamp-2 text-[16px]">We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</h2>
                   </div>
                 </div>
               </div>
@@ -690,7 +659,7 @@
         </div>
       </div>
     </main>
-    <footer class="flex lg:gap-4 gap-14 pb-3 mt-8 lg:max-w-[1320px] lg:justify-center lg:mx-auto w-full mx-6 lg:flex-row flex-col">
+    <footer class="flex lg:gap-4 gap-14 pb-3 mt-8 lg:max-w-[1320px] lg:justify-center lg:mx-auto w-full mx-6 lg:flex-row flex-col dark:bg-black">
       <div class="lg:w-1/6 flex flex-col gap-6">
         <a href="#"
           ><img
@@ -753,18 +722,13 @@
                   29,2024</span
                 >
               </div>
-              <h2 class="line-clamp-2 text-[16px]">
-                Emirates Palace Spends that a Hefty Sum For Emirates
-                Palace Spends that a Hefty Sum ForEmirates Palace Spends
-                that a Hefty Sum ForEmirates Palace Spends that a Hefty
-                Sum ForEmirates Palace Spends that a Hefty Sum For
-              </h2>
+              <h2 class="line-clamp-2 text-[16px]">We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</h2>
             </div>
           </div>
           <div class="grid lg:grid-cols-[1fr_2fr] gap-4 group grid-cols-[1fr_5fr]">
             <div class="rounded-2xl overflow-hidden">
               <img
-                src="https://demo-responsive.vercel.app/imgs/business.jpg"
+                src="https://demo-responsive.vercel.app/imgs/news-1.jpg"
                 alt="blog-thumbnail"
                 width="100%"
                 class="w-full object-cover group-hover:scale-125 transition-all duration-700 ease-in"
@@ -777,18 +741,13 @@
                   29,2024</span
                 >
               </div>
-              <h2 class="line-clamp-2 text-[16px]">
-                Emirates Palace Spends that a Hefty Sum For Emirates
-                Palace Spends that a Hefty Sum ForEmirates Palace Spends
-                that a Hefty Sum ForEmirates Palace Spends that a Hefty
-                Sum ForEmirates Palace Spends that a Hefty Sum For
-              </h2>
+              <h2 class="line-clamp-2 text-[16px]">We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</h2>
             </div>
           </div>
-          <div class="grid lg:grid-cols-[1fr_2fr] gap-4 group grid-cols-[1fr_5fr]">
+          <div class="grid lg:grid-cols-[1fr_2fr] gap-4 group grid-cols-[1fr_5fr] ">
             <div class="rounded-2xl overflow-hidden">
               <img
-                src="https://demo-responsive.vercel.app/imgs/business.jpg"
+                src="https://demo-responsive.vercel.app/imgs/news-2.jpg"
                 alt="blog-thumbnail"
                 width="100%"
                 class="w-full object-cover group-hover:scale-125 transition-all duration-700 ease-in"
@@ -801,18 +760,13 @@
                   29,2024</span
                 >
               </div>
-              <h2 class="line-clamp-2 text-[16px]">
-                Emirates Palace Spends that a Hefty Sum For Emirates
-                Palace Spends that a Hefty Sum ForEmirates Palace Spends
-                that a Hefty Sum ForEmirates Palace Spends that a Hefty
-                Sum ForEmirates Palace Spends that a Hefty Sum For
-              </h2>
+              <h2 class="line-clamp-2 text-[16px]">We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</h2>
             </div>
           </div>
           <div class="grid lg:grid-cols-[1fr_2fr] gap-4 group grid-cols-[1fr_5fr]">
             <div class="rounded-2xl overflow-hidden">
               <img
-                src="https://demo-responsive.vercel.app/imgs/business.jpg"
+                src="https://demo-responsive.vercel.app/imgs/news-1.jpg"
                 alt="blog-thumbnail"
                 width="100%"
                 class="w-full object-cover group-hover:scale-125 transition-all duration-700 ease-in"
@@ -825,12 +779,7 @@
                   29,2024</span
                 >
               </div>
-              <h2 class="line-clamp-2 text-[16px]">
-                Emirates Palace Spends that a Hefty Sum For Emirates
-                Palace Spends that a Hefty Sum ForEmirates Palace Spends
-                that a Hefty Sum ForEmirates Palace Spends that a Hefty
-                Sum ForEmirates Palace Spends that a Hefty Sum For
-              </h2>
+              <h2 class="line-clamp-2 text-[16px]">We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</h2>
             </div>
           </div>
         </div>
