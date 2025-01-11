@@ -9,6 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
     />
     <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body class="dark:bg-black dark:text-white">
     <header class="flex py-4 sticky top-0 bg-white lg:justify-center mx-auto z-30 justify-between dark:bg-black">
@@ -26,11 +27,11 @@
             <i class="fa-solid fa-angle-right group-hover:rotate-90 px-1 transition-all duration-300 ease-in"></i>
             <ul class="hidden group-hover:block absolute w-[250px] bg-white shadow-md rounded-md transition-all duration-1000 ease-in dark:bg-black">
               <li class="px-5 py-3 flex items-center gap-1 group/test">
-                <div class="w-3 h-1 bg-red-500 hidden group-hover/test:block transition-all duration-500 ease-in"></div>
+                <div class="w-0 h-1 bg-red-500 group-hover/test:w-3 transition-all ease-in"></div>
                 <a href="#">Home One</a>
               </li>
               <li class="group px-5 py-3 flex items-center gap-1 group/test">
-                <div class="w-3 h-1 bg-red-500 hidden group-hover/test:block transition-all duration-500 ease-in"></div>
+                <div class="w-0 h-1 bg-red-500 group-hover/test:w-3 transition-all ease-in"></div>
                 <a href="#">Home Two</a>
               </li>
             </ul>
@@ -40,11 +41,11 @@
             <i class="fa-solid fa-angle-right group-hover:rotate-90 px-1 transition-all duration-500"></i>
             <ul class="hidden group-hover:block absolute w-[250px] bg-white shadow-md rounded-md transition-all duration-1000 ease-in dark:bg-black">
               <li class="px-5 py-3 flex items-center gap-1 group/test">
-                <div class="w-3 h-1 bg-red-500 hidden group-hover/test:block"></div>
+                <div class="w-0 h-1 bg-red-500 group-hover/test:w-3 transition-all ease-in"></div>
                 <a href="#">Home One</a>
               </li>
               <li class="px-5 py-3 flex items-center gap-1 group/test">
-                <div class="w-3 h-1 bg-red-500 hidden group-hover/test:block"></div>
+                <div class="w-0 h-1 bg-red-500 group-hover/test:w-3 transition-all ease-in"></div>
                 <a href="#">Home Two</a>
               </li>
             </ul>
@@ -56,11 +57,11 @@
             ></i>
             <ul class="hidden group-hover:block absolute w-[250px] bg-white shadow-md rounded-md transition-all duration-1000 ease-in dark:bg-black">
               <li class="px-5 py-3 flex items-center gap-1 group/test">
-                <div class="w-3 h-1 bg-red-500 hidden group-hover/test:block"></div>
+                <div class="w-0 h-1 bg-red-500 group-hover/test:w-3 transition-all ease-in"></div>
                 <a href="#">Home One</a>
               </li>
               <li class="px-5 py-3 flex items-center gap-1 group/test">
-                <div class="w-3 h-1 bg-red-500 hidden group-hover/test:block"></div>
+                <div class="w-0 h-1 bg-red-500 group-hover/test:w-3 transition-all ease-in"></div>
                 <a href="#">Home Two</a>
               </li>
             </ul>
@@ -72,11 +73,11 @@
             ></i>
             <ul class="hidden group-hover:block absolute w-[250px] bg-white shadow-md rounded-md transition-all duration-1000 ease-in dark:bg-black">
               <li class="px-5 py-3 flex items-center gap-1 group/test">
-                <div class="w-3 h-1 bg-red-500 hidden group-hover/test:block"></div>
+                <div class="w-0 h-1 bg-red-500 group-hover/test:w-3 transition-all ease-in"></div>
                 <a href="#">Home One</a>
               </li>
               <li class="px-5 py-3 flex items-center gap-1 group/test">
-                <div class="w-3 h-1 bg-red-500 hidden group-hover/test:block"></div>
+                <div class="w-0 h-1 bg-red-500 group-hover/test:w-3 transition-all ease-in"></div>
                 <a href="#">Home Two</a>
               </li>
             </ul>
@@ -87,9 +88,10 @@
       <div class="w-1/4 flex justify-center items-center gap-3 text-gray-700">
         <div class="flex relative">
           <input type="text" id="search-box" name="search-box" class= " p-3 absolute group/focus -top-5 -right-[1px] rounded-full w-10 h-10 opacity-0 focus:opacity-100 peer transition-all ease-in duration-500 focus:w-40 focus:border-[0.5px] focus:border-borderColor outline-none"/>
+          <i class="fa-solid fa-magnifying-glass search-icon absolute -left-[26px] -top-[2px] peer-focus:hidden"></i>
+            <i class="fa-solid fa-xmark close-icon text-lg hidden peer-focus:block"></i>
           <label for="search-box" class="absolute -top-4 -left-10 border-borderColor size-0 p-5 border rounded-full flex justify-center transition-all duration-500 ease-in items-center cursor-pointer peer-focus:p-[15px]">
-            <i class="fa-solid fa-magnifying-glass search-icon group-focus/focus:hidden"></i>
-            <i class="fa-solid fa-xmark close-icon text-lg hidden group-focus/focus:block"></i>
+            
           </label>
         </div>
         <div class="dark-mode relative top-1">
@@ -209,7 +211,7 @@
               >
                 <div class="bg-[#D6A411] maintag">BUSINESS</div>
                 <h2 class="line-clamp-2 font-bold text-2xl ">
-                  <a href=""
+                  <a href="" class="bg-gradient-to-r from-black to-black bg-no-repeat bg-left-bottom bg-[length:0%_1px] group-hover:bg-[length:100%_1px] duration-500"
                     >Emirates Palace Spends that a Hefty Sum For Emirates Palace
                     Spends that a Hefty Sum ForEmirates Palace Spends that a
                     Hefty Sum ForEmirates Palace Spends that a Hefty Sum
@@ -241,8 +243,8 @@
                 class="w-[60%] h-full flex flex-col justify-center gap-3 px-3"
               >
                 <div class="maintag bg-[#AD0C5C]">FASHION</div>
-                <h2 class="line-clamp-2 font-bold text-2xl">
-                  <a href=""
+                <h2 class="line-clamp-2 font-bold text-2xl ">
+                  <a href="" class="bg-gradient-to-r from-black to-black bg-no-repeat bg-left-bottom bg-[length:0%_1px] group-hover:bg-[length:100%_1px] duration-500"
                     >Emirates Palace Spends that a Hefty Sum For Emirates Palace
                     Spends that a Hefty Sum ForEmirates Palace Spends that a
                     Hefty Sum ForEmirates Palace Spends that a Hefty Sum
@@ -274,8 +276,8 @@
                 class="w-[60%] h-full flex flex-col justify-center gap-3 px-3"
               >
                 <div class="maintag bg-[#0DbC99]">INTERVIEW</div>
-                <h2 class="line-clamp-2 font-bold text-2xl">
-                  <a href=""
+                <h2 class="line-clamp-2 font-bold text-2xl ">
+                  <a href="" class="bg-gradient-to-r from-black to-black bg-no-repeat bg-left-bottom bg-[length:0%_1px] group-hover:bg-[length:100%_1px] duration-500"
                     >Emirates Palace Spends that a Hefty Sum For Emirates Palace
                     Spends that a Hefty Sum ForEmirates Palace Spends that a
                     Hefty Sum ForEmirates Palace Spends that a Hefty Sum
@@ -308,8 +310,8 @@
                 class="w-[60%] h-full flex flex-col justify-center gap-3 px-3"
               >
                 <div class="maintag bg-[#02585E]">EDUCATION</div>
-                <h2 class="line-clamp-2 font-bold text-2xl">
-                  <a href=""
+                <h2 class="line-clamp-2 font-bold text-2xl ">
+                  <a href="" class="bg-gradient-to-r from-black to-black bg-no-repeat bg-left-bottom bg-[length:0%_1px] group-hover:bg-[length:100%_1px] duration-500"
                     >Emirates Palace Spends that a Hefty Sum For Emirates Palace
                     Spends that a Hefty Sum ForEmirates Palace Spends that a
                     Hefty Sum ForEmirates Palace Spends that a Hefty Sum
@@ -342,8 +344,8 @@
                 class="w-[60%] h-full flex flex-col justify-center gap-3 px-3"
               >
                 <div class="maintag bg-[#0E7C08]">HEALTH</div>
-                <h2 class="line-clamp-2 font-bold text-2xl">
-                  <a href=""
+                <h2 class="line-clamp-2 font-bold text-2xl ">
+                  <a href="" class="bg-gradient-to-r from-black to-black bg-no-repeat bg-left-bottom bg-[length:0%_1px] group-hover:bg-[length:100%_1px] duration-500"
                     >Emirates Palace Spends that a Hefty Sum For Emirates Palace
                     Spends that a Hefty Sum ForEmirates Palace Spends that a
                     Hefty Sum ForEmirates Palace Spends that a Hefty Sum
@@ -376,8 +378,8 @@
                 class="w-[60%] h-full flex flex-col justify-center gap-3 px-3"
               >
                 <div class="maintag bg-[#D6A411]">BUSINESS</div>
-                <h2 class="line-clamp-2 font-bold text-2xl">
-                  <a href=""
+                <h2 class="line-clamp-2 font-bold text-2xl ">
+                  <a href="" class="bg-gradient-to-r from-black to-black bg-no-repeat bg-left-bottom bg-[length:0%_1px] group-hover:bg-[length:100%_1px] duration-500"
                     >Emirates Palace Spends that a Hefty Sum For Emirates Palace
                     Spends that a Hefty Sum ForEmirates Palace Spends that a
                     Hefty Sum ForEmirates Palace Spends that a Hefty Sum
@@ -469,7 +471,10 @@
                         29,2024</span
                       >
                     </div>
-                    <h2 class="line-clamp-2 text-[16px]">We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</h2>
+                    <h2 class="line-clamp-2 text-[16px]"> 
+                      <a href="" class="bg-gradient-to-r from-black to-black bg-no-repeat bg-left-bottom bg-[length:0%_1px] group-hover:bg-[length:100%_1px] duration-500"> We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</a>
+                    </h2> 
+                    
                   </div>
                 </div>
                 <div class="grid lg:grid-cols-[1fr_2fr] gap-4 group grid-cols-[1fr_5fr]">
@@ -488,7 +493,9 @@
                         29,2024</span
                       >
                     </div>
-                    <h2 class="line-clamp-2 text-[16px]">We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</h2>
+                    <h2 class="line-clamp-2 text-[16px]"> 
+                      <a href="" class="bg-gradient-to-r from-black to-black bg-no-repeat bg-left-bottom bg-[length:0%_1px] group-hover:bg-[length:100%_1px] duration-500"> We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</a>
+                    </h2>
                   </div>
                 </div>
                 <div class="grid lg:grid-cols-[1fr_2fr] gap-4 group grid-cols-[1fr_5fr]">
@@ -507,7 +514,9 @@
                         29,2024</span
                       >
                     </div>
-                    <h2 class="line-clamp-2 text-[16px]">We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</h2>
+                    <h2 class="line-clamp-2 text-[16px]"> 
+                      <a href="" class="bg-gradient-to-r from-black to-black bg-no-repeat bg-left-bottom bg-[length:0%_1px] group-hover:bg-[length:100%_1px] duration-500"> We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</a>
+                    </h2>
                   </div>
                 </div>
                 <div class="grid lg:grid-cols-[1fr_2fr] gap-4 group grid-cols-[1fr_5fr]">
@@ -526,7 +535,9 @@
                         29,2024</span
                       >
                     </div>
-                    <h2 class="line-clamp-2 text-[16px]">We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</h2>
+                    <h2 class="line-clamp-2 text-[16px]"> 
+                      <a href="" class="bg-gradient-to-r from-black to-black bg-no-repeat bg-left-bottom bg-[length:0%_1px] group-hover:bg-[length:100%_1px] duration-500"> We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</a>
+                    </h2>
                   </div>
                 </div>
               </div>
@@ -722,7 +733,9 @@
                   29,2024</span
                 >
               </div>
-              <h2 class="line-clamp-2 text-[16px]">We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</h2>
+              <h2 class="line-clamp-2 text-[16px]"> 
+                      <a href="" class="bg-gradient-to-r from-black to-black bg-no-repeat bg-left-bottom bg-[length:0%_1px] group-hover:bg-[length:100%_1px] duration-500"> We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</a>
+                    </h2>
             </div>
           </div>
           <div class="grid lg:grid-cols-[1fr_2fr] gap-4 group grid-cols-[1fr_5fr]">
@@ -741,7 +754,9 @@
                   29,2024</span
                 >
               </div>
-              <h2 class="line-clamp-2 text-[16px]">We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</h2>
+              <h2 class="line-clamp-2 text-[16px]"> 
+                      <a href="" class="bg-gradient-to-r from-black to-black bg-no-repeat bg-left-bottom bg-[length:0%_1px] group-hover:bg-[length:100%_1px] duration-500"> We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</a>
+                    </h2>
             </div>
           </div>
           <div class="grid lg:grid-cols-[1fr_2fr] gap-4 group grid-cols-[1fr_5fr] ">
@@ -760,7 +775,9 @@
                   29,2024</span
                 >
               </div>
-              <h2 class="line-clamp-2 text-[16px]">We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</h2>
+              <h2 class="line-clamp-2 text-[16px]"> 
+                      <a href="" class="bg-gradient-to-r from-black to-black bg-no-repeat bg-left-bottom bg-[length:0%_1px] group-hover:bg-[length:100%_1px] duration-500"> We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</a>
+                    </h2>
             </div>
           </div>
           <div class="grid lg:grid-cols-[1fr_2fr] gap-4 group grid-cols-[1fr_5fr]">
@@ -779,7 +796,9 @@
                   29,2024</span
                 >
               </div>
-              <h2 class="line-clamp-2 text-[16px]">We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</h2>
+              <h2 class="line-clamp-2 text-[16px]"> 
+                      <a href="" class="bg-gradient-to-r from-black to-black bg-no-repeat bg-left-bottom bg-[length:0%_1px] group-hover:bg-[length:100%_1px] duration-500"> We Believe Announce Will the iPhone this We Believe Announce Will the iPhone this</a>
+                    </h2>
             </div>
           </div>
         </div>

@@ -1,0 +1,8 @@
+input[name="search-box"]:focus + label .search-icon {
+    display: none; /* Ẩn icon magnifying-glass */
+  }
+  
+  input[name="search-box"]:focus + label .close-icon {
+    display: block; /* Hiển thị icon xmark */
+    position: absolute;
+  }
