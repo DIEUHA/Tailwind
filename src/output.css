@@ -703,6 +703,30 @@ video {
   left: -26px;
 }
 
+.left-10 {
+  left: 2.5rem;
+}
+
+.-left-9 {
+  left: -2.25rem;
+}
+
+.-left-8 {
+  left: -2rem;
+}
+
+.-top-\[18px\] {
+  top: -18px;
+}
+
+.-top-3 {
+  top: -0.75rem;
+}
+
+.-top-\[13px\] {
+  top: -13px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -841,6 +865,14 @@ video {
   height: max-content;
 }
 
+.h-\[80px\] {
+  height: 80px;
+}
+
+.h-0 {
+  height: 0px;
+}
+
 .w-1\/4 {
   width: 25%;
 }
@@ -900,6 +932,11 @@ video {
 
 .max-w-\[1320px\] {
   max-width: 1320px;
+}
+
+.translate-x-0 {
+  --tw-translate-x: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer {
@@ -1448,6 +1485,10 @@ video {
   opacity: 1;
 }
 
+.group:checked .group-checked\:hidden {
+  display: none;
+}
+
 .group\/li:hover .group-hover\/li\:ml-0 {
   margin-left: 0px;
 }
@@ -1464,7 +1505,16 @@ video {
   display: block;
 }
 
+.group:hover .group-hover\:h-max {
+  height: -moz-max-content;
+  height: max-content;
+}
+
 .group\/test:hover .group-hover\/test\:w-3 {
+  width: 0.75rem;
+}
+
+.group\/li:hover .group-hover\/li\:w-3 {
   width: 0.75rem;
 }
 
@@ -1508,8 +1558,16 @@ video {
   top: 0px;
 }
 
+.peer:checked ~ .peer-checked\:z-50 {
+  z-index: 50;
+}
+
 .peer:checked ~ .peer-checked\:block {
   display: block;
+}
+
+.peer:checked ~ .peer-checked\:hidden {
+  display: none;
 }
 
 .peer:checked ~ .peer-checked\:translate-x-5 {
@@ -1527,6 +1585,11 @@ video {
   background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
 }
 
+.peer:checked ~ .peer-checked\:text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .peer:checked ~ .peer-checked\:text-gray-300 {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity, 1));
@@ -1535,6 +1598,22 @@ video {
 .peer:checked ~ .peer-checked\:text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.peer:checked ~ .group .peer-checked\:group-\[\]\:block {
+  display: block;
+}
+
+.peer:checked ~ .group .peer-checked\:group-\[\]\:hidden {
+  display: none;
+}
+
+.peer:focus ~ .peer-focus\:z-50 {
+  z-index: 50;
+}
+
+.peer:focus ~ .peer-focus\:z-20 {
+  z-index: 20;
 }
 
 .peer:focus ~ .peer-focus\:block {
@@ -1547,6 +1626,22 @@ video {
 
 .peer:focus ~ .peer-focus\:p-\[15px\] {
   padding: 15px;
+}
+
+.peer:focus ~ .peer-focus\:opacity-100 {
+  opacity: 1;
+}
+
+.peer:focus ~ .group .peer-focus\:group-\[\]\:z-50 {
+  z-index: 50;
+}
+
+.peer:focus ~ .group .peer-focus\:group-\[\]\:block {
+  display: block;
+}
+
+.peer:focus ~ .group .peer-focus\:group-\[\]\:hidden {
+  display: none;
 }
 
 .peer ~ .peer-\[\]\:focus\:hidden:focus {

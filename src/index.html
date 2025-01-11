@@ -87,12 +87,12 @@
       </div>
       <div class="w-1/4 flex justify-center items-center gap-3 text-gray-700">
         <div class="flex relative">
-          <input type="text" id="search-box" name="search-box" class= " p-3 absolute group/focus -top-5 -right-[1px] rounded-full w-10 h-10 opacity-0 focus:opacity-100 peer transition-all ease-in duration-500 focus:w-40 focus:border-[0.5px] focus:border-borderColor outline-none"/>
-          <i class="fa-solid fa-magnifying-glass search-icon absolute -left-[26px] -top-[2px] peer-focus:hidden"></i>
-            <i class="fa-solid fa-xmark close-icon text-lg hidden peer-focus:block"></i>
-          <label for="search-box" class="absolute -top-4 -left-10 border-borderColor size-0 p-5 border rounded-full flex justify-center transition-all duration-500 ease-in items-center cursor-pointer peer-focus:p-[15px]">
-            
+          <input type="text" id="search-box" name="search-box" class= "z-30 p-3 absolute -top-5 -right-[1px] rounded-full w-10 h-10 opacity-0 focus:opacity-100 peer transition-all ease-in duration-500 focus:w-40 focus:border-[0.5px] focus:border-borderColor outline-none"/>
+          <label for="search-box" class="peer-focus:z-50 group absolute -top-4 -left-10 border-borderColor size-0 p-5 border rounded-full flex justify-center transition-all duration-500 ease-in items-center cursor-pointer peer-focus:p-[15px]">
+            <i class="fa-solid fa-magnifying-glass search-icon absolute peer-focus:group-[]:hidden"></i>
+            <i class="fa-solid fa-xmark close-icon text-lg hidden absolute  z-50 peer-focus:group-[]:block  "></i>
           </label>
+          
         </div>
         <div class="dark-mode relative top-1">
           <input type="checkbox" id="dark-mode"name="dark-mode" class="hidden"/>
@@ -103,9 +103,10 @@
         </div>
         <div class="sub-menu relative lg:hidden top-1">
           <input type="checkbox" id="respon-menu" name="respon-menu" class="hidden peer " />
-          <label for="respon-menu">
-            <i class="fa-solid fa-bars text-2xl "></i>
-            <i class="fa-solid fa-x hidden text-2xl"></i>
+          <label for="respon-menu" class="group">
+            <i class="fa-solid fa-bars text-2xl peer-checked:group-[]:hidden"></i>
+            <i class="fa-solid fa-x hidden peer-checked:group-[]:block relative z-50"></i>
+
           </label>
           <div class="z-40 side-menu py-20 px-6 fixed -right-[500px] w-[300px] h-[100vh] bg-white shadow-lg peer-checked:block peer-checked:right-0 peer-checked:top-0 hidden">
             <ul class="">
@@ -115,12 +116,12 @@
                 <hr class="my-3" />
                 <ul class="group-hover:block hidden transition-all ease-in">
                   <li class="group/li flex items-center">
-                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mx-2"></div>
+                    <div class="w-0 h-1 bg-red-500 group-hover/li:w-3 transition-all duration-300 ease-in mx-2"></div>
                     <a href="#" class="ml-3 group-hover/li:ml-0 ">Home One</a>
                   </li>
                   <hr class="my-3">
                   <li class="group/li flex items-center">
-                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mx-2"></div>
+                    <div class="w-0 h-1 bg-red-500 group-hover/li:w-3 transition-all duration-300 ease-in mx-2"></div>
                     <a href="#" class="ml-3 group-hover/li:ml-0 ">Home Two</a>
                   </li>
                   <hr class="my-3">
@@ -132,12 +133,12 @@
                 <hr class="my-3" />
                 <ul class="group-hover:block hidden transition-all ease-in">
                   <li class="group/li flex items-center">
-                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mx-2"></div>
+                    <div class="w-0 h-1 bg-red-500 group-hover/li:w-3 transition-all duration-300 ease-in mx-2"></div>
                     <a href="#" class="ml-3 group-hover/li:ml-0 ">Home One</a>
                   </li>
                   <hr class="my-3">
                   <li class="group/li flex items-center">
-                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mx-2"></div>
+                    <div class="w-0 h-1 bg-red-500 group-hover/li:w-3 transition-all duration-300 ease-in mx-2"></div>
                     <a href="#" class="ml-3 group-hover/li:ml-0 ">Home Two</a>
                   </li>
                   <hr class="my-3">
@@ -149,12 +150,12 @@
                 <hr class="my-3" />
                 <ul class="group-hover:block hidden transition-all ease-in">
                   <li class="group/li flex items-center">
-                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mx-2"></div>
+                    <div class="w-0 h-1 bg-red-500 group-hover/li:w-3 transition-all duration-300 ease-in mx-2"></div>
                     <a href="#" class="ml-3 group-hover/li:ml-0 ">Home One</a>
                   </li>
                   <hr class="my-3">
                   <li class="group/li flex items-center">
-                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mx-2"></div>
+                    <div class="w-0 h-1 bg-red-500 group-hover/li:w-3 transition-all duration-300 ease-in mx-2"></div>
                     <a href="#" class="ml-3 group-hover/li:ml-0 ">Home Two</a>
                   </li>
                   <hr class="my-3">
@@ -166,12 +167,12 @@
                 <hr class="my-3" />
                 <ul class="group-hover:block hidden transition-all ease-in">
                   <li class="group/li flex items-center">
-                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mx-2"></div>
+                    <div class="w-0 h-1 bg-red-500 group-hover/li:w-3 transition-all duration-300 ease-in mx-2"></div>
                     <a href="#" class="ml-3 group-hover/li:ml-0 ">Home One</a>
                   </li>
                   <hr class="my-3">
                   <li class="group/li flex items-center">
-                    <div class="w-3 h-1 bg-red-500 hidden group-hover/li:block transition-all duration-500 ease-in mx-2"></div>
+                    <div class="w-0 h-1 bg-red-500 group-hover/li:w-3 transition-all duration-300 ease-in mx-2"></div>
                     <a href="#" class="ml-3 group-hover/li:ml-0 ">Home Two</a>
                   </li>
                   <hr class="my-3">
@@ -499,12 +500,12 @@
                   </div>
                 </div>
                 <div class="grid lg:grid-cols-[1fr_2fr] gap-4 group grid-cols-[1fr_5fr]">
-                  <div class="rounded-2xl overflow-hidden">
+                  <div class="rounded-2xl overflow-hidden h-full">
                     <img
                       src="https://demo-responsive.vercel.app/imgs/news-3.jpg"
                       alt="blog-thumbnail"
                       width="100%"
-                      class="w-full object-cover group-hover:scale-125 transition-all duration-700 ease-in"
+                      class="w-full h-[80px] object-cover group-hover:scale-125 transition-all duration-700 ease-in"
                     />
                   </div>
                   <div class="flex flex-col gap-1 font-semibold">
